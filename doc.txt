@@ -1,0 +1,17 @@
+Cách cài đặt React
+  1/ Phải có NodeJS
+  2/ Vào folder muốn cài React trên app File
+  3/ Bấm vào path bar: nhập cmd -> node -v để kiểm tra version
+  4/ Cú pháp cài: npx create-react-app [tên folder] -> Enter
+  5/ Mở File, truy cập folder vừa tạo -> path bar nhập cmd
+  6/ Để mở folder trên VS Code: code .
+  7/ Để chạy code live-server: npm start
+
+  - File pakage.json: dùng để build, cài dependencies,...
+
+  - ReactJS là Single Page Application (SPA) nên chỉ có 1 trang duy nhất là index.html thôi, thực chất những cái còn lại là component
+
+  - Trong file index sẽ có 1 thẻ div có id root, là thẻ bọc những component đã được render ra
+
+
+TEMPLATES (nằm trong câu lệnh(statements) return): là những dòng code mà nó hiển thị ra cho người dùng thấy (HTML/CSS)
