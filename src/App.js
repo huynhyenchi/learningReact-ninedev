@@ -7,6 +7,11 @@ function App() {
   // mảng
   const arrayNum = [1,2,3,4,5,6];
   const a = 3;
+  // object
+  const obj = {
+    position: 'Intern Front-end Engineer',
+    location: 'HCMC'
+  };
   // mảng có object
   const arr = [
     {
@@ -33,9 +38,11 @@ function App() {
       {/* đã vào trong JSX, comment bên trong JSX thì được kí hiệu như vậy đấy */}
       {/* những dấu NGOẶC NHỌN dùng để NHÚNG JS vào trong JSX */}
       <h1>{greeting}</h1>
-      <div>{arrayNum}</div>
-      <div>{a}</div>
-      <div>
+      <div>mảng: {arrayNum}</div><br></br>
+      <div>biến số: {a}</div><br></br>
+      <div>obj: {obj.position}</div><br></br>
+      <div>obj: {obj.location}</div><br></br>
+      <div>mảng chứa obj:
         {arr.map((item, index) => (
           <div key={index}>
             <div>{item.name} - {index}</div>
@@ -44,7 +51,7 @@ function App() {
         ))}
       </div>
 
-      <a href={link}>GitHub</a>
+      link: <a href={link}>GitHub</a>
     </div>
   );
 }
